@@ -3,3 +3,16 @@ my name is Rocky
 its just an simple text
 im studing in SIET college tumkur
 it was very good college in tumkur
+just try one basic program is related to for loop:
+#include<stdio.h>
+int main()
+{
+char name;
+printf("enter the name:");
+scanf("%c",name);
+for(int i=0;i<5;i++)
+{
+printf("%c\n%d",name,i);
+}
+return 0;
+}
