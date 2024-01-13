@@ -13,13 +13,13 @@ scanf("%c",name);
 for(int i=0;i<5;i++)
 {
 printf("%c\n%d",name,i);
-printf("name%d",name);
 if(name=="rohit")
 {
 printf("its not ur name");
 }
 else{
 printf("its my name rohit");
+when the statement were run then first check with if condition and if its true then print the statement.
 }
 return 0;
 }
