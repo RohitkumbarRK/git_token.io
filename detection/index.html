@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop id="background-video">
+            <source src="front_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="slider">
+        <div class="slide active" id="slide1">
+            <div class="container">
+                <h1>Welcome to Detection Services</h1>
+                <p class="intro-text">Discover the power of advanced detection technologies. Choose one of the options below to begin your journey:</p>
+                <div class="button-container">
+                    <button id="objectDetectionButton" class="btn btn-object">Object Detection</button>
+                    <button id="imageDetectionButton" class="btn btn-image">Image Detection</button>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+                    <button id="micButton" class="btn-mic">🎤</button>
+                    <button id="searchButton" class="btn-search">Enter</button>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide2">
+            <div class="background-video">
+                <video autoplay muted loop id="live-background-video">
+                    <source src="back_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="container">
+                <h2 id="detectionTitle">Live Detection</h2>
+                <div id="video-container" class="video-container">
+                    <video id="video" autoplay></video>
+                </div>
+                <button id="backButton" class="btn btn-back">Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

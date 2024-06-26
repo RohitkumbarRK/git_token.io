@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.background-video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.slider {
+    display: flex;
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    flex-shrink: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    animation: fadeIn 2s;
+}
+
+.intro-text {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.button-container, .search-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.btn, .btn-mic, .btn-search, .btn-back {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+.btn:hover, .btn-mic:hover, .btn-search:hover, .btn-back:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.btn-object {
+    background: #FF5733;
+}
+
+.btn-object:hover {
+    background: #C70039;
+}
+
+.btn-image {
+    background: #33B5FF;
+}
+
+.btn-image:hover {
+    background: #007BFF;
+}
+
+.btn-mic {
+    background: #FF5733;
+}
+
+.btn-mic:hover {
+    background: #C70039;
+}
+
+.btn-search {
+    background: #33B5FF;
+}
+
+.btn-search:hover {
+    background: #007BFF;
+}
+
+.btn-back {
+    background: #6c757d;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background: #5a6268;
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
